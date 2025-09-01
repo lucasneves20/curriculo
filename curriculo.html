@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo - Lucas Neves Moreira Sampaio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "TASA Explorer", sans-serif;
+        color: #111827;
+        background: #f3f4f6;
+        -webkit-print-color-adjust: exact; /* força cores no PDF */
+        print-color-adjust: exact;
+      }
+
+      /* Página A4 */
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        background: white;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        background: #0ea5e9; /* azul */
+        padding: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .sidebar img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .sidebar span {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 0.9rem;
+        text-align: center;
+        word-break: break-word;
+      }
+
+      .sidebar a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .sidebar a:hover {
+        text-decoration: underline;
+      }
+
+      /* Conteúdo */
+      .content {
+        padding: 30px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        text-transform: capitalize;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 4px;
+        margin-bottom: 12px;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 8px 0;
+      }
+
+      p,
+      li {
+        color: #374151;
+        font-size: 0.95rem;
+        line-height: 1.4rem;
+      }
+
+      .section {
+        margin-bottom: 24px;
+      }
+
+      .list-disc {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      /* Impressão */
+      @media print {
+        body {
+          background: none;
+        }
+        .page {
+          box-shadow: none;
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <img src="1659967129702.jpg" alt="Foto de perfil" />
+        <span>
+          <strong>Franca - SP</strong>
+          <a href="mailto:lucasnm.sampaio@outlook.com"
+            >lucasnm.sampaio@outlook.com</a
+          >
+          <a href="tel:+5516982420186">(16) 98242-0186</a>
+          <a href="https://www.linkedin.com/in/lucas-neves-moreira-sampaio/"
+            >https://linkedin.com/in/lucas-neves-moreira-sampaio</a
+          >
+          <a href="https://github.com/lucasneves20"
+            >https://github.com/lucasneves20</a
+          >
+        </span>
+      </div>
+
+      <!-- Conteúdo -->
+      <div class="content">
+        <h1>Lucas Neves Moreira Sampaio</h1>
+
+        <!-- Resumo -->
+        <section class="section">
+          <h2>Resumo Profissional</h2>
+          <p>
+            Desenvolvedor Front-end com experiência em
+            <strong>JavaScript, TypeScript, React, Vue.js e Nuxt/Next.js</strong
+            >. Atuação na criação de
+            <strong>interfaces modernas, responsivas e performantes</strong>,
+            seguindo boas práticas de UI/UX. Conhecimento em integração com APIs
+            REST, versionamento com Git e ferramentas modernas de estilização
+            como <strong>TailwindCSS e ShadCN</strong>. Perfil disciplinado,
+            criativo e focado em entregar soluções eficientes.
+          </p>
+        </section>
+
+        <!-- Formação -->
+        <section class="section">
+          <h2>Formação</h2>
+          <ul class="list-disc">
+            <li>Técnico em Informática, SENAC – nov 2021 - jul 2023</li>
+            <li>Especialista em React, Ignite Rocketseat - ago 2024</li>
+            <li>
+              Mais de 11 certificados em desenvolvimento, segurança e processos
+              de TI
+            </li>
+          </ul>
+        </section>
+
+        <!-- Experiência -->
+        <section class="section">
+          <h2>Experiência</h2>
+          <div>
+            <h3>Desenvolvedor Front-end – Empresa de energia solar</h3>
+            <ul class="list-disc">
+              <li>
+                Desenvolvimento de interfaces e componentes reutilizáveis em
+                <strong>React, Vue e Next.js</strong>
+              </li>
+              <li>
+                Implementação de layouts responsivos e acessíveis com
+                <strong>TailwindCSS</strong>
+              </li>
+              <li>Integração com APIs REST para exibição de dados dinâmicos</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Projetos -->
+        <section class="section">
+          <h2>Projetos Pessoais</h2>
+          <ul class="list-disc">
+            <li>
+              Sistema de agendamento para pousada com controle de estoque
+              (<strong>Nuxt + ShadCN Vue</strong>)
+            </li>
+            <li>
+              Aplicativo de terminal para manipulação de planilhas Excel
+              (<strong>GO lang</strong>)
+            </li>
+          </ul>
+        </section>
+
+        <!-- Skills -->
+        <section class="section">
+          <h2>Habilidades Técnicas</h2>
+          <ul class="grid-2">
+            <li>
+              <strong>Linguagens:</strong> JavaScript, TypeScript, HTML, CSS
+            </li>
+            <li><strong>Frameworks:</strong> React, Vue.js, Next.js, Nuxt</li>
+            <li>
+              <strong>Estilização:</strong> TailwindCSS, ShadCN, CSS Modules
+            </li>
+            <li>
+              <strong>Ferramentas:</strong> Git, Docker, Zsh, Figma (básico)
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
